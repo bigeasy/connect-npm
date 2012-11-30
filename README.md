@@ -1,4 +1,4 @@
-# Connect NPM
+# Connect NPM [![Build Status](https://secure.travis-ci.org/bigeasy/connect-npm.png?branch=travis-ci)](https://travis-ci.org/bigeasy/connect-npm)
 
 Serve modules directly from your Node.js require path to the browser.
 
