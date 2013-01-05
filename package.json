@@ -1,5 +1,5 @@
 { "name" : "connect-npm"
-, "version" : "0.0.0"
+, "version" : "0.0.1"
 , "description" : "Serve modules directly from your Node.js require path to the browser."
 , "url" : "http://bigeasy.github.com/connect-npm"
 , "keywords" : ["connect", "npm", "middleware", "modules", "require", "amd"]
