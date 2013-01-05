@@ -12,7 +12,7 @@ module.exports = function (options) {
   // This will raise an exception with an error code of `MODULE_NOT_FOUND` if
   // the module cannot be resolved.
   modules.forEach(function (module) {
-    actual[util.format(format, module)] = require.resolve(module);
+    actual[util.format(format, module)] = options.require.resolve(module);
   });
   // If the URL is requesting a module we've been permitted to send, send it,
   // otherwise move onto the next handler.
