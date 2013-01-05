@@ -9,6 +9,7 @@ require("proof")(2, function (async, equal, ok) {
     .use(connect.static(__dirname + "/public"))
     .use(require('../..')({
       modules: [ "send" ],
+      require: require,
       format: "/npm/%s.js"
     }));
                
