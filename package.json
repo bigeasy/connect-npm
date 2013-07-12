@@ -5,9 +5,9 @@
 , "keywords" : ["connect", "npm", "middleware", "modules", "require", "amd"]
 , "author" : "Alan Gutierrez <alan@prettyrobots.com>"
 , "contributors" : []
-, "devDependencies": { "connect": "~2", "request": "~2", "proof": "0.0.15" }
+, "devDependencies": { "connect": "~2", "request": "~2", "proof": "0.0.32" }
 , "dependencies": { "send": "~0" }
-, "scripts" : { "test": "proof t/*/*.t.js" }
+, "scripts" : { "test": "proof test t/*/*.t.js" }
 , "engines" : { "node": "> 0.8.0" }
 , "homepage": "https://github.com/bigeasy/connect-npm"
 , "licenses": [

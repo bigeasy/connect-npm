@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-require("proof")(2, function (async, equal, ok) {
+require("proof")(2, function (step, equal, ok) {
   var connect = require("connect"),
       request = require("request"),
       app, server;
@@ -14,13 +14,13 @@ require("proof")(2, function (async, equal, ok) {
     }));
                
         
-  async(function () {
-    server = app.listen(7654, async());
+  step(function () {
+    server = app.listen(7654, step());
   }, function () {
-    request("http://127.0.0.1:7654/npm/send.js", async());
+    request("http://127.0.0.1:7654/npm/send.js", step());
   }, function (response, body) {
     equal(response.statusCode, 200, "found");
-    request("http://127.0.0.1:7654/npm/request.js", async());
+    request("http://127.0.0.1:7654/npm/request.js", step());
   }, function (response, body) {
     equal(response.statusCode, 404, "not found");
     server.close();
