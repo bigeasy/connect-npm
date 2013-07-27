@@ -5,7 +5,7 @@
 , "keywords" : ["connect", "npm", "middleware", "modules", "require", "amd"]
 , "author" : "Alan Gutierrez <alan@prettyrobots.com>"
 , "contributors" : []
-, "devDependencies": { "connect": "~2", "request": "~2", "proof": "0.0.32" }
+, "devDependencies": { "connect": "~2", "request": "~2", "proof": "0.0.33" }
 , "dependencies": { "send": "~0" }
 , "scripts" : { "test": "proof test t/*/*.t.js" }
 , "engines" : { "node": "> 0.8.0" }
